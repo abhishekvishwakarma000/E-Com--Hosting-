@@ -4,7 +4,7 @@
     "name": "Product 1",
     "description": "The whimsical bumblebee buzzed blithely beside the babbling brookA mischievmerrily on mangoes.The whimsical bumblebee buzzed blithely beside the babbling brook.A mischievous mermaid mesmerized the mariners.",
     "price": "$10",
-    "mainImage": "/images/s1.png",
+    "mainImage": "images/s1.png",
     "thumbnails": ["i2.webp", "i3.jpeg", "i4.webp","i2.webp", "i3.jpeg", "i4.webp"]
   },
   {
@@ -12,7 +12,7 @@
     "name": "Product 1",
     "description": "The whimsical bumblebee buzzed blithely beside the babbling brookA mischievmerrily on mangoes.The whimsical bumblebee buzzed blithely beside the babbling brook.A mischievous mermaid mesmerized the mariners.",
     "price": "$10",
-    "mainImage": "/images/s2.png",
+    "mainImage": "images/s2.png",
     "thumbnails": ["i2.webp", "i3.jpeg", "i4.webp","i2.webp", "i3.jpeg", "i4.webp"]
   },
   {
@@ -20,15 +20,15 @@
     "name": "Product 1",
     "description": "The whimsical bumblebee buzzed blithely beside the babbling brookA mischievmerrily on mangoes.The whimsical bumblebee buzzed blithely beside the babbling brook.A mischievous mermaid mesmerized the mariners.",
     "price": "$10",
-    "mainImage": "/images/s3.png",
-    "thumbnails": ["/images/s1.png", "/images/s2.png", "/images/s3.png","/images/s1.png"]
+    "mainImage": "images/s3.png",
+    "thumbnails": ["images/s1.png", "images/s2.png", "images/s3.png","images/s1.png"]
   },
   {
     "id": 1,
     "name": "Product 1",
     "description": "The whimsical bumblebee buzzed blithely beside the babbling brookA mischievmerrily on mangoes.The whimsical bumblebee buzzed blithely beside the babbling brook.A mischievous mermaid mesmerized the mariners.",
     "price": "$10",
-    "mainImage": "/images/s2.png",
+    "mainImage": "images/s2.png",
     "thumbnails": ["i2.webp", "i3.jpeg", "i4.webp","i2.webp", "i3.jpeg", "i4.webp"]
   },
   {
@@ -36,7 +36,7 @@
     "name": "Product 1",
     "description": "The whimsical bumblebee buzzed blithely beside the babbling brookA mischievmerrily on mangoes.The whimsical bumblebee buzzed blithely beside the babbling brook.A mischievous mermaid mesmerized the mariners.",
     "price": "$10",
-    "mainImage": "/images/s3.png",
+    "mainImage": "images/s3.png",
     "thumbnails": ["i2.webp", "i3.jpeg", "i4.webp","i2.webp", "i3.jpeg", "i4.webp"]
   }
 ]
