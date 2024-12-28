@@ -20,7 +20,7 @@ body{
   }
 
 
-@media (width<=615px){
+@media (width<=415px){
    /* #main{
     position: relative;
    
@@ -251,6 +251,7 @@ body{
 
 
     & .slider-image{
+      
         width: 100%;
         height: 160px;
         border-radius: 5px;
@@ -264,8 +265,19 @@ body{
  .swiper-container {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: -1;
+  
     }
+    /* .swiper-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  height: 100%;
+    } */
  .swiper-slide {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,8 +285,10 @@ body{
  .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 10px;
    }
+  
 
 .content-slider{
     width: 100%;
@@ -353,29 +367,6 @@ body{
     /* margin-top: 3px; */
     /* background-color: rgb(29, 147, 0); */
 }
-
-
-
-
-
-     @media (width=320px){
-        .card {
-           
-            width: 120px;
-            border-radius: 5px;
-            padding: 10px;
-            text-align: center;
-          }
-        } 
-         @media (width<320px){
-            .card {
-               
-                width: 100%;
-                border-radius: 5px;
-                padding: 10px;
-                text-align: center;
-              }
-            } 
       
       
 .galary-content{
@@ -396,25 +387,40 @@ body{
   
   .product {
     /* background-color: rgba(141, 141, 141, 0.421); */
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 5px 8px 5px 8px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 10px;
     cursor: pointer;
+    overflow: hidden;
     /* width: 90px; */
     /* height: 120px; */
     
   
    
     & h3{
-      display: inline;
+      /* display: inline; */
+      color: #fff;
       font-weight: 400;
+  background-color: #070707a6;
+  padding:3px 0 2px 7px;
+  font-size: 12px;
+
+
+      
   
     }
     & p{
-      display: inline;
+      color: #fff;
+      font-size: 12px;
+      background-color: #070707a6;
+      padding:0 0 3px 8px;
+
+
     }
     & img{
-      border-radius: 5px;
+      width: 100%;
+      /* background-color: red; */
+   
+
     }
   }
   

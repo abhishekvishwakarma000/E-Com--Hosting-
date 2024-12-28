@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-container', {
     loop: true, // Enables continuous loop mode
     autoplay: {
-      delay: 1000, // Auto-slide every 3 seconds
+      delay: 2000, // Auto-slide every 3 seconds
       disableOnInteraction: false, // Continue autoplay after user interaction
     },
     pagination: {
