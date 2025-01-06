@@ -1,27 +1,70 @@
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   document.querySelector("#loader").style.display = "flex";
-//   setTimeout(function () {
-//     document.querySelector("#loader").style.display = "none";
-//     // loader.style.top = "-100%";
-//   }, 2000);
-// });
+// let lastScrollY = window.scrollY;
+//     const header = document.querySelector('.home-top-mid');
 
+//     window.addEventListener('scroll', () => {
+//       if (window.scrollY > lastScrollY) {
+//         // User scrolled down, hide the header
+//         header.classList.add('hidden');
+//       } else {
+//         // User scrolled up, show the header
+//         header.classList.remove('hidden');
+//       }
+//       lastScrollY = window.scrollY;
+//     });
+
+// script.js
+
+// ---------------internet-------------------
+window.addEventListener('offline', function() {
+  document.getElementById('offline-message').style.display = 'block'; 
+});
+
+window.addEventListener('online', function() {
+  document.getElementById('offline-message').style.display = 'none'; 
+});
+
+// Check initial connection status
+if (!navigator.onLine) {
+  document.getElementById('offline-message').style.display = 'block'; 
+}
+// --------------------------internet-----------------
+let category = document.querySelector('.category');
+let cart = document.querySelector('.cart');
 let profile = document.querySelector('.profile-container');
 
-
+document.querySelector('.taskbar-category').onclick = () =>{
+  category.classList.toggle('active');
+ }
+ document.querySelector('.close-btn2').onclick = () =>{
+  category.classList.remove('active');
+ }
+ 
+document.querySelector('.taskbar-cart').onclick = () =>{
+  cart.classList.toggle('active');
+ }
+ document.querySelector('.close-btn1').onclick = () =>{
+  cart.classList.remove('active');
+ }
 document.querySelector('.taskbar-profile').onclick = () =>{
  profile.classList.toggle('active');
- 
 }
-const buttons = document.querySelectorAll("#tskbr-icons i");
+document.querySelector('.close-btn').onclick = () =>{
+  profile.classList.remove('active');
+ }
 
-buttons.forEach((button) => {
-  button.addEventListener("click", function () {
-    buttons.forEach((btn) => btn.classList.remove("active"));
-    this.classList.add("active");
-  });
-});
+
+
+
+
+// const buttons = document.querySelectorAll("#tskbr-icons i");
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", function () {
+//     buttons.forEach((btn) => btn.classList.remove("active"));
+//     this.classList.add("active");
+//   });
+// });
 
 // --------slider---------------------
 document.addEventListener('DOMContentLoaded', () => {

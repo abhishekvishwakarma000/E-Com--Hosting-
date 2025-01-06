@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopping app</title>
+    <title>LUXYCART</title>
     <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="/images/wblogoimage/favicons.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -16,31 +17,56 @@
 
 
 
-        <!-- ---------------------------loader---------------- -->
-        <!-- <div id="loader">
-            <div class="loader-containt">
-                <h1>F</h1>
-                <h1>A</h1>
-                <h1>S</h1>
-                <h1>H</h1>
-                <h1>I</h1>
-                <h1>O</h1>
-                <h1>N</h1>
-
+        <div id="offline-message">
+            <div class="offline-inner">
+                <div class="offline-image"><img src="/images/wblogoimage/offline.png" alt=""></div>
+                <h1>You are offline.</h1>
+                <p>Please check your internet connection.</p>
             </div>
-        </div> -->
+        </div>
 
-        <!-- ---------------------------loader-end--------------- -->
 
         <!-- ---------------profile----------------------------- -->
         <div class="profile-container">
+            <div class="close-btn" id="clbtn"><i class='bx bx-x'></i></div>
+            <div class="user">
+                <div class="user-image"></div>
+                <div class="user-name">abcdefghi</div>
+            </div>
+            <div class="user-order" id="user-ord">
+                <div class="order" id="ordhelp">
+                    <div class="ordbtn" id="orhe-btn"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/orders-bfe8c4.svg"><p>Order</p></div>
+                </div>
+                <div class="help" id="ordhelp">
+                    <div class="helpbtn" id="orhe-btn"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/helpcenter-7d90c0.svg"><p>Help center</p></div>
+                </div>
+            </div>
+            <div class="user-like" id="user-ord">
+                <div class="wishlist" id="ordhelp">
+                    <div class="wishbtn" id="orhe-btn"><i class='bx bx-heart' ></i><p>Wishlist</p></div>
+                </div>
+                <div class="Coupons" id="ordhelp">
+                    <div class="Couponsbtn" id="orhe-btn"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg"><p>Coupons</p></div>
+                </div>
+            </div>
+            </div>
 
         </div>
-
         <!-- ---------------profile----------------------------- -->
+        <!-- ---------------cart----------------------------- -->
+
+        <div class="cart">
+            <div class="close-btn1" id="clbtn"><i class='bx bx-x'></i></div>
+        </div>
+
+        <div class="category">
+            <div class="close-btn2" id="clbtn"><i class='bx bx-x'></i></div>
+        </div>
+        <!-- ---------------cart-end----------------------------- -->
+
 
         <div id="home-top">
-            <div class="home-top-up"></div>
+            <!-- <div class="home-top-up"></div> -->
             <div class="home-top-mid">
                 <!-- <div class="home-top-mid-lft"><i class='bx bx-menu'></i></div> -->
                 <div class="home-top-mid-middle">
@@ -64,20 +90,23 @@
                 <div class="slider-image">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">
-                            <img src="https://www.shutterstock.com/image-photo/happy-beautiful-asian-shopaholic-woman-260nw-1278669220.jpg" alt="Image 1">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/online-shopping-banner-template_23-2148764706.jpg?t=st=1735377184~exp=1735380784~hmac=9ce2044ce67819aed18d4e9c3969471034b54c575507259145f8979b3e37f226&w=996" alt="Image 2">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="https://img.freepik.com/free-vector/flat-horizontal-sale-banner-template-with-photo_23-2149000923.jpg?t=st=1735377237~exp=1735380837~hmac=b8cb5b71bdb81bed0b676442f64939d9cc35693648fcf1bbb86e745a60fac99d&w=1380" alt="Image 3">
-                          </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="https://rukminim1.flixcart.com/fk-p-flap/280/160/image/b4da7c47d23d62d4.png?q=60"
+                                    alt="Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://rukminim1.flixcart.com/fk-p-flap/280/160/image/b6ff817ce4adbd5e.jpg?q=60"
+                                    alt="Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/736x/84/ad/1c/84ad1c67da7c18049aaa3f71bb3e474b.jpg"
+                                    alt="Image 3">
+                            </div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
-                      </div>
+                    </div>
 
                 </div>
                 <div class="content-slider">
@@ -111,8 +140,7 @@
                             <div class="content-slider-inner-part-details">Appliances</div>
                         </a>
                         <a href="/mens/mens.html" class="content-slider-inner-part" id="electonics">
-                            <div class="content-slider-inner-part-image"><img
-                                    src="/images/wblogoimage/elec.png"
+                            <div class="content-slider-inner-part-image"><img src="/images/wblogoimage/elec.png"
                                     alt="electonics" /></div>
                             <div class="content-slider-inner-part-details">Electonics</div>
                         </a>
@@ -126,7 +154,7 @@
                                     alt="sport" /></div>
                             <div class="content-slider-inner-part-details">Sports</div>
                         </a>
-                       
+
                     </div>
                 </div>
 
@@ -162,9 +190,11 @@
 
 
         <div class="taskbar">
-            <div class="taskbar-home" id="tskbr-icons"><i class='bx bx-home-alt'></i>
-                <h5>Home</h5>
-            </div>
+            <a href="index.html">
+                <div class="taskbar-home" id="tskbr-icons"><i class='bx bx-home-alt'></i>
+                    <h5>Home</h5>
+                </div>
+            </a>
 
             <div class="taskbar-category" id="tskbr-icons"><i class='bx bx-category'></i></i>
                 <h5>Category</h5>
@@ -182,7 +212,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
