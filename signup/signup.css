@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-g{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.d-flex-c{
+    display: flex;
+    /* justify-content: center; */
+    padding-top:20px ;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.sing-top-lft{
+    width: 50px;
+    height: 50px;
+    /* background-color: blue; */
+
+    & img{
+        width: 100%;
+    }
+}
+.sing-top-rgt{
+    width: 30%;
+    /* background-color: blue; */
+
+    color: #fff;
+
+    & h1{
+        font-size: 25px;
+    }
+    & p{
+        font-size: 15px;
+        font-weight: 100;
+    }
+}
+.sign-container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: brown; */
+}
+.sign-container-top{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.936);
+}
+
+.signup-content{
+    width: 100%;
+    height: 550px;
+    margin-top: -50px;
+    /* background-color: red; */
+}
+.signup-inner{
+    
+    width: 80%;
+    height: 80%;
+    /* background-color: blue; */
+}
+
+
+.custom-shape-divider-top-1736576464 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-top-1736576464 svg {
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+  
+  .custom-shape-divider-top-1736576464 .shape-fill {
+    fill: rgba(0, 0, 0, 0.938);
+  }
+
+
+
+  #signupcontent{
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+  }
+ .signup-btn{
+    width: 90%;
+    height: 30px;
+    margin-top: 50px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    
+
+    & p{
+        color: #fff;
+        font-size: 15px;
+        font-weight: 100;
+     
+    }
+ }
